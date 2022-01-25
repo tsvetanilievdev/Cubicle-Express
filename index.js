@@ -1,13 +1,10 @@
 const express = require('express');
-const {engine} = require('express-handlebars');
+const unitHandlerbars = require('./config/handlebars');
 const app = express();
 
+// require('./config/handlebars')(app); вместо --> const unitHandlerbars = require('./config/handlebars'); unitHandlerbars(app);
+unitHandlerbars(app);
 app.use('/static',express.static('static'))
-
-app.engine('hbs', engine({
-    extname: 'hbs'
-}));
-app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
     res.render('index')
