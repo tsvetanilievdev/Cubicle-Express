@@ -1,9 +1,14 @@
 const express = require('express');
+const {engine} = require('express-handlebars');
 const app = express();
 
+app.use('/static',express.static('static'))
+
+app.engine('hbs', engine());
+app.set('view engine', 'hbs');
+
 app.get('/', (req, res) => {
-    res.write('Hello');
-    res.end();
+    res.render('index', {layout: false})
 })
 
 app.listen(5000, () => console.log('Cubicle is working on port 5000...'));
