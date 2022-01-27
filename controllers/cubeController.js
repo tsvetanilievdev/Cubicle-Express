@@ -3,8 +3,6 @@ const cubeService = require('../services/cubeService');
 const router = express.Router();
 
 const renderCreateCube = async (req, res) => {
-  let cubes = await cubeService.getAll();
-  console.log(cubes);
   res.render('create');
 };
 

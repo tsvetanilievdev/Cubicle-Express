@@ -1,14 +1,16 @@
 [
     {
-        "name": "Test",
-        "description": "Some text....",
-        "difficulty": 2,
-        "imageUrl": "www.dasdsadsa/cmm.com"
+        "name": "My",
+        "description": "test",
+        "imageUrl": "https://www.ubuy.com.tr/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNTFrNkpTRVVSM0wuX0FDX1NMMTEwMF8uanBn.jpg",
+        "difficulty": "1",
+        "id": "1ojkzd4okyww8v38"
     },
     {
-        "name": "My 2",
-        "description": "some teeeext",
-        "imageUrl": "skaksaksaksa",
-        "difficulty": "5"
+        "name": "Golden Cube",
+        "description": "Pure 14k gold cube",
+        "imageUrl": "static/images/golden-cube.jpg",
+        "difficulty": "4",
+        "id": "1ojkz9m0kywwh2az"
     }
 ]
