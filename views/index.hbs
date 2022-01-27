@@ -1,13 +1,13 @@
 <main>
   <h1>
-    {{#if}}
+    {{#if title}}
       {{title}}
-      {{#else}}
+      {{else}}
       BROWSER
       {{/if}}
   </h1>
   <form action='/search' method='GET'>
-    <input type='text' class='search' name='search' placeholder='Search...' value={{search}}/>
+    <input type='text' class='search' name='search' placeholder='Search...' value={{search}} />
     <input
       type='number'
       name='from'
