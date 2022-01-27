@@ -20,8 +20,25 @@ const create = async (name, description, imageUrl, difficulty) => {
   await writeDbData(JSON.stringify(cubeDb,null,4));
 };
 
+const search = async (text, from, to) => {
+  let result = await getAll();
+  
+  if(text) {
+    result = result.filter(x => x.name.toLowerCase().includes(text.toLowerCase()));
+  }
+  if(from) {
+    result = result.filter(x => x.difficulty >= from);
+  }
+  if(to){
+    result = result.filter(x => x.difficulty <= to);
+  }
+
+  return result;
+}
+
 const cubeService = {
     create,
-    getAll
+    getAll,
+    search
 }
 module.exports = cubeService;

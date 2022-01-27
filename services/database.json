@@ -12,5 +12,12 @@
         "imageUrl": "static/images/golden-cube.jpg",
         "difficulty": "4",
         "id": "1ojkz9m0kywwh2az"
+    },
+    {
+        "name": "Wolden-Red Cube",
+        "description": "A brain teaser for one player. This 3Dcube is made out of 27 single cubes. Unfold it to get a winding snake, and than fold it back into a 3x3 x3 cube.",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0181/8685/products/RedCube-1.jpg?v=1638766809",
+        "difficulty": "5",
+        "id": "1ojkzd0kkyx3wuqr"
     }
 ]
