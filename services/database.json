@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Test",
+        "description": "Some text....",
+        "difficulty": 2,
+        "imageUrl": "www.dasdsadsa/cmm.com"
+    },
+    {
+        "name": "My 2",
+        "description": "some teeeext",
+        "imageUrl": "skaksaksaksa",
+        "difficulty": "5"
+    }
+]
